@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 __author__ = 'Michael Niewoehner <c0d3z3r0>'
 __email__ = 'mniewoeh@stud.hs-offenburg.de'
 
@@ -64,7 +64,7 @@ Brigde mode (b):    Connects LAN and WAN port directly
 Universal mode (u): Use LAN and WAN as normal network interfaces
 Noline mode (n):    Physically disconnect both ports""")
     elif args.mode:
-        if modes.has_key(args.mode):
+        if modes.__contains__(args.mode):
             print("Setting mode to " +
                   {'b': 'bridge', 'n': 'noline', 'u': 'universal'}[args.mode])
             setMode(args.mode)
