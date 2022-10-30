@@ -61,5 +61,5 @@ chmod +x /usr/bin/rbmode
 	~~~bash
 	vi /etc/rc.local
 	rbmode u
-	put <rbmode u> at top of <exit 0>
+	put "rbmode u" (without quotes)  at top of <exit 0>
 	~~~
