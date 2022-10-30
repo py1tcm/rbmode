@@ -40,3 +40,18 @@ systemctl enable rbmode.service
 	modprobe i2c-dev
 	rbmode u
 	~~~
+
+## Installation on openwrt 2X.XX
+
+~~~bash
+opkg install wget python3 python-smbus3 libi2c kmod-i2c-i801
+wget https://raw.githubusercontent.com/py1tcm/rbmode/master/rbmode.py
+cp rbmode.py /usr/bin/rbmode
+chmod +x /usr/bin/rbmode
+~~~
+
+* Set the mode manually
+
+	~~~bash
+	rbmode u
+	~~~
