@@ -44,7 +44,8 @@ systemctl enable rbmode.service
 ## Installation on OpenWrt 2X.XX
 
 ~~~bash
-opkg install wget python3 python-smbus3 libi2c kmod-i2c-i801
+opkg update
+opkg install wget python3 python3-smbus libi2c kmod-i2c-i801
 wget https://raw.githubusercontent.com/py1tcm/rbmode/master/rbmode.py
 cp rbmode.py /usr/bin/rbmode
 chmod +x /usr/bin/rbmode
@@ -61,5 +62,5 @@ chmod +x /usr/bin/rbmode
 	~~~bash
 	vi /etc/rc.local
 	rbmode u
-	put "rbmode u" (without quotes)  at top of <exit 0>
+	put "rbmode u" (without quotes) at top of "exit 0"
 	~~~
