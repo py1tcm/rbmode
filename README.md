@@ -51,7 +51,7 @@ cp rbmode.py /usr/bin/rbmode
 chmod +x /usr/bin/rbmode
 ~~~
 
-* Set the mode manually
+* Set mode manually
 
 	~~~bash
 	rbmode u
