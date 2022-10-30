@@ -41,7 +41,7 @@ systemctl enable rbmode.service
 	rbmode u
 	~~~
 
-## Installation on openwrt 2X.XX
+## Installation on OpenWrt 2X.XX
 
 ~~~bash
 opkg install wget python3 python-smbus3 libi2c kmod-i2c-i801
@@ -54,4 +54,12 @@ chmod +x /usr/bin/rbmode
 
 	~~~bash
 	rbmode u
+	~~~
+	
+* Run at starup
+
+	~~~bash
+	vi /etc/rc.local
+	rbmode u
+	put <rbmode u> at top of <exit 0>
 	~~~
